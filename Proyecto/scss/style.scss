@@ -1,0 +1,120 @@
+@import "bases/bases";
+@import "componentes/header";
+@import "componentes/footer";
+@import "bases/titulos-secciones";
+@import "componentes/servicios-html";
+
+/*NO APLIQUÉ SASS EN ESTAS SECCIONES*/
+/*Galeria de imagenes*/
+#HOME {
+    margin-top: 130px;
+    width: 1903px;
+    height: 840px;
+    background-image: url("../Img desafio11/Galeria-principal.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: Galería-img 20s;}
+    @keyframes Galería-img {
+        0% {background-image: url("../Img desafio11/Galeria-principal.jpg");}
+        25% {background-image: url("../Img desafio11/Galeria-principal2.jpg");}
+        50% {background-image: url("../Img desafio11/Galeria-principal3.jpg");}
+        75% {background-image: url("../Img desafio11/Galeria-principal4.jpg");}
+        100%{background-image: url("../Img desafio11/Galeria-principal.jpg");}
+    }
+
+    .tex-adelante-galeria {
+        font-family: "Raleway-Light";
+        font-size: 20px;
+        color: #1b1e1f;
+        text-align: center;
+        background-color: #f7a00e;
+        opacity: 0.8;
+        padding: 20px;}
+/*Fin galeria de imagenes*/
+
+
+/*específico de la sección Servicios*/
+.Titulos1 {
+    color:#141f35;
+    font-family: "Raleway-Bold";
+    font-size: 20px;
+    text-align: left;
+    margin-top: 15px;}
+.parrafos-servicios {
+    text-align: left;
+    margin-top: 10px;}
+.sabermas {
+    width: 110px;
+    background-color: #e5e5e5;
+    color: #004f87;
+    border: 2px solid #004f87;
+    font-size: 16px;
+    text-align: center;
+    padding: 6px 9px;
+    display: block;
+    margin-top: 20px;}
+.sabermas:hover {
+    background-color: #004f87;
+    color: #d0cfcd;}
+/*Fin sección Servicios*/
+
+
+/*específico de la sección Trabajos*/
+.Titulos2 {
+    color:#1b1e1f;
+    background-color: #d0cfcd;
+    font-family: "Raleway-Bold";
+    font-size: 30px;
+    text-align: left;
+    padding: 10px 20px 10px 20px;}
+.descripciones-trabajo {
+    color:#d0cfcd;
+    background-color: #141f35;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;}
+.img-atras {
+    position: relative;
+    display: inline-block;
+    text-align: center;}
+.tex-adelante1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: block;
+    width: 80%;
+    margin: 50px;}
+/*Fin sección Trabajos*/
+
+
+/*específico de la sección sobre mi*/
+.nombre { 
+    color:#1b1e1f;
+    background-color: #d0cfcd;
+    font-family: "Raleway-Bold";
+    font-size: 35px;
+    text-align: left;
+    padding: 4px 25px;}
+.parrafo-sobremi {
+    background-color: #004f87;
+    color: #d0cfcd;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    padding: 16px 25px;
+    margin-top: 20px;}
+.Titulos1-b {
+    color:#141f35;
+    font-family: "Raleway-Bold";
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;}
+.parrafos-sobremi2 {
+    color: #1b1e1f;
+    font-family: "Muli";
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 8px;}
+/*Fin sección Sobre mi*/

@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+
+
+@font-face {
+    font-family: "Raleway";
+    src: url("tipografias/Raleway-Medium.ttf") format("truetype")}
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("tipografias/Raleway-Light.ttf") format("truetype")}
+@font-face {
+    font-family: "Raleway-Semibold";
+    src: url("tipografias/Raleway-SemiBold.ttf") format("truetype")}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("tipografias/Raleway-Bold.ttf") format("truetype")}
+@font-face {
+    font-family: "Muli";
+    src: url("tipografias/Muli.ttf") format("truetype")}
+@font-face {
+    font-family: "Muli-Light";
+    src: url("tipografias/Muli-Light.ttf") format("truetype")}
+@font-face {
+    font-family: "Muli-LightItalic";
+    src: url("CSS/tipografias/Muli-LightItalic.ttf") format("truetype")}
+@font-face {
+    font-family: "Muli-Italic";
+    src: url("CSS/tipografias/Muli-Italic.ttf") format("truetype")}
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("CSS/tipografias/Muli-Bold.ttf") format("truetype")}
+@font-face {
+    font-family: "Muli-BoldItalic";
+    src: url("CSS/tipografias/Muli-BoldItalic.ttf") format("truetype")}
+
+/*Listas tipografías*/
+$Raleway:
+    Raleway,
+    Raleway-Light,
+    Raleway-Semibold,
+    Raleway-Bold;
+$Muli:
+    Muli,
+    Muli-Italic,
+    Muli-Light,
+    Muli-LightItalic,
+    Muli-Bold,
+    Muli-BoldItalic;
+
+
+
+/*Variables colores de la identidad*/
+$azul: #141f35;
+$azul-claro: #004f87;
+$amarillo: #f7a00e;
+$gris: #d0cfcd;
+$negro: #1b1e1f;
+
+
+
+/*Criterios generales de toda la página*/
+a:link, a:visited, a:active {
+    text-decoration:none;}
+
+body {
+    background-color: #e5e5e5;}
+    
+%textos-generales {
+    color: $negro;
+    font-family: nth($Muli, 1);
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;}
+    
+    p {
+        @extend %textos-generales;
+    }
